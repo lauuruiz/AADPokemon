@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AAD Pokemon</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre">Nombre:</string>
+    <string name="peso">Peso:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="categoria">Categoria:</string>
+    <string name="habilidad">Habilidad:</string>
+    <string name="tipo">Tipo:</string>
+    <string name="altura">Altura:</string>
+    <string name="borrar">Borrar</string>
+    <string name="editar">Editar</string>
+    <string name="guardarcambios">Guardar cambios</string>
+    <string name="editarpokemon">Editar pokemon</string>
+    <string name="insertarpokemon">Insertar Pokemon</string>
+    <string name="seleccionarimg">Seleccionar imagen</string>
+</resources>
