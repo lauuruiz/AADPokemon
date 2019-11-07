@@ -18,7 +18,7 @@ public class Pokemon implements Serializable {
     @ColumnInfo(name = "peso")
     private double peso;
 
-    @ColumnInfo(name = "sexo")
+    @ColumnInfo(name = "sexo") //no he podido cambiar el nombre de la columna, pero esta columna es para imagenes
     private String sexo;
 
     @ColumnInfo(name = "categoria")

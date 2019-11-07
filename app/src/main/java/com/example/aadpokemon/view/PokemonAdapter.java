@@ -18,6 +18,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.aadpokemon.EditarActivity;
 import com.example.aadpokemon.MainActivity;
 import com.example.aadpokemon.R;
@@ -58,11 +59,11 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
             final Pokemon current = pokemonList.get(position);
             holder.tvNombre.setText(current.getNombre().toString());
             holder.tvPeso.setText(Double.toString(current.getPeso()));
-            holder.tvSexo.setText(current.getSexo().toString());
             holder.tvCategoria.setText(current.getCategoria().toString());
             holder.tvHabilidad.setText(current.getHabilidad().toString());
             holder.tvTipo.setText(current.getTipo().toString());
-            holder.imPokemon.setImageResource(R.drawable.charmaleon);
+            Glide.with(context).load(current.getSexo().toString()).into(holder.imPokemon);
+            //holder.imPokemon.setImageResource(R.drawable.charmaleon);
 
             holder.btBorrar.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -113,7 +114,7 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
     }
 
     public class PokemonViewHolder extends RecyclerView.ViewHolder {
-        private final TextView tvItem, tvNombre, tvPeso, tvSexo, tvCategoria, tvHabilidad, tvTipo;
+        private final TextView tvItem, tvNombre, tvPeso, tvCategoria, tvHabilidad, tvTipo;
         private final ImageView imPokemon;
         private Button btBorrar, btEditar;
 
@@ -122,7 +123,6 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
             tvItem = itemView.findViewById(R.id.tvItem);
             tvNombre = itemView.findViewById(R.id.tvNombre);
             tvPeso = itemView.findViewById(R.id.tvPeso);
-            tvSexo = itemView.findViewById(R.id.tvSexo);
             tvCategoria = itemView.findViewById(R.id.tvCategoria);
             tvHabilidad = itemView.findViewById(R.id.tvHabilidad);
             tvTipo = itemView.findViewById(R.id.tvTipo);

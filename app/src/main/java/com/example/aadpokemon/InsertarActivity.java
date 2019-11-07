@@ -19,7 +19,7 @@ import com.example.aadpokemon.view.MainViewModel;
 
 public class InsertarActivity extends AppCompatActivity{
 
-    private EditText etNombre, etPeso, etSexo, etCategoria, etHabilidad, etTipo;
+    private EditText etNombre, etPeso, etCategoria, etHabilidad, etTipo;
     private Button btInsertar, btSeleccionar;
     private ImageView imPokemon;
     private String imagen;
@@ -37,7 +37,6 @@ public class InsertarActivity extends AppCompatActivity{
     private void initComponents(){
         etNombre = findViewById(R.id.etNombreInsertar);
         etPeso = findViewById(R.id.etPesoInsertar);
-        etSexo = findViewById(R.id.etSexoInsertar);
         etCategoria = findViewById(R.id.etCategoriaInsertar);
         etHabilidad = findViewById(R.id.etHabilidadInsertar);
         etTipo = findViewById(R.id.etTipoInsertar);
@@ -54,7 +53,7 @@ public class InsertarActivity extends AppCompatActivity{
                 Pokemon pokemon = new Pokemon();
                 pokemon.setNombre(etNombre.getText().toString());
                 pokemon.setPeso(Double.parseDouble(etPeso.getText().toString()));
-                pokemon.setSexo(etSexo.getText().toString());
+                pokemon.setSexo(imagen);
                 pokemon.setCategoria(etCategoria.getText().toString());
                 pokemon.setHabilidad(etHabilidad.getText().toString());
                 pokemon.setTipo(etTipo.getText().toString());

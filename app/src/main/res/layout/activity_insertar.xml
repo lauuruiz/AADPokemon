@@ -27,16 +27,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:text="@string/sexo"
-        app:layout_constraintBaseline_toBaselineOf="@+id/etSexoInsertar"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -86,6 +76,7 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etPesoInsertar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -99,25 +90,11 @@
         android:layout_marginRight="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/etSexoInsertar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/etNombreInsertar" />
-
-    <EditText
-        android:id="@+id/etSexoInsertar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etCategoriaInsertar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/etPesoInsertar" />
+        app:layout_constraintTop_toBottomOf="@+id/etNombreInsertar" />
 
     <EditText
         android:id="@+id/etCategoriaInsertar"
@@ -131,8 +108,9 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etHabilidadInsertar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/etSexoInsertar" />
+        app:layout_constraintTop_toBottomOf="@+id/etPesoInsertar" />
 
     <EditText
         android:id="@+id/etHabilidadInsertar"
@@ -146,6 +124,7 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etTipoInsertar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/etCategoriaInsertar" />
 
@@ -159,7 +138,9 @@
         android:layout_marginRight="20dp"
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/etHabilidadInsertar" />
 
@@ -176,6 +157,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:text="@string/insertarpokemon"
